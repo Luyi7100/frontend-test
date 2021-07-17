@@ -47,3 +47,152 @@ li {
   color: orange;
   background-color: white;
 }
+.header {
+  height: 100px;
+}
+.header .logo {
+  float: left;
+}
+.header .logo a {
+  width: 56px;
+  height: 56px;
+  margin-top: 22px;
+  background-color: #bf6700;
+  background-image: url('../img/mi.jpg');
+  display: block;
+}
+
+.service2 {
+  padding-left: 58px;
+  color: #424242;
+  margin-left: 7px;
+  float: left;
+  max-width: 850px;
+  line-height: 100px;
+}
+.service2 a {
+  color: #424242;
+}
+.service2 a:hover {
+  color: orange;
+}
+.allgoods {
+  visibility: hidden;
+}
+
+.header-wrapper li a {
+  font-size: 16px;
+  margin-right: 20px;
+  display: block;
+}
+.search-wrapper {
+  height: 50px;
+  width: 296px;
+  margin-top: 25px;
+  /* background-color: #bfa; */
+  float: right;
+  border: 1px solid rgb(224, 224, 224);
+  overflow: hidden;
+}
+.search-wrapper .search-inp {
+  height: 51px;
+  width: 222px;
+  border: none;
+  /* margin: 0px; */
+  padding: 0px 10px;
+  float: left;
+  /* margin-top: -1px; */
+
+  /* box-sizing: content-box; */
+}
+.search-wrapper .search-button {
+  float: left;
+  width: 54px;
+  height: 51px;
+  border: none;
+  border-left: 1px solid rgb(224, 224, 224);
+  background-color: #fff;
+  padding: 0;
+  /* margin: -1px 0 0 0; */
+  color: #616161;
+  font-size: 18px;
+}
+.search-wrapper .search-button a {
+  color: #616161;
+  width: 100%;
+  height: 100%;
+  display: block;
+  line-height: 51px;
+}
+.search-wrapper .search-button a:hover {
+  color: #fff;
+  background-color: orange;
+}
+.middle-wrapper {
+  overflow: hidden;
+
+  position: relative;
+}
+.middle-wrapper .middle-nav {
+  width: 234px;
+  height: 420px;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: left;
+  margin: 0px;
+  padding: 20px 0;
+  display: inline-block;
+  border: none;
+  /* position: relative; */
+}
+.middle-wrapper .middle-nav li {
+  display: block;
+  width: 174px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 30px;
+  /* position: absolute; */
+  /* right: 30px; */
+}
+.middle-wrapper .middle-nav li:hover {
+  background-color: orange;
+}
+.middle-wrapper .middle-nav a {
+  font-size: 16px;
+  color: #fff;
+}
+
+.middle-wrapper .middle-nav i {
+  float: right;
+  line-height: 42px;
+}
+.middle-wrapper .middle-banner li {
+  float: right;
+  position: absolute;
+  left: 234px;
+  margin-right: 0px;
+  padding-right: 0px;
+  border-right: 0px;
+}
+.middle-wrapper .middle-banner {
+  width: 992px;
+  height: 460px;
+}
+.point {
+  position: absolute;
+  bottom: 22px;
+  right: 35px;
+}
+.point a {
+  float: left;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  margin-left: 6px;
+}
+.point a:hover,
+.point .active {
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+}
