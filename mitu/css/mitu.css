@@ -1,0 +1,12 @@
+.box {
+  width: 132px;
+  height: 271px;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url('../img/mitu.png');
+  background-position: 0 0;
+  transition: all 0.1s 1s steps(3);
+}
+.box:hover {
+  background-position: -396px 0;
+}
