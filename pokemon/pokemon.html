@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        perspective: 800px;
+      }
+
+      .cube {
+        width: 200px;
+        height: 200px;
+        margin: 200px 100px 100px 400px;
+        float: left;
+        transform-style: preserve-3d;
+
+        animation: rotate 15s infinite linear;
+      }
+      .cube:hover {
+        animation-play-state: paused;
+      }
+      .cube > div {
+        position: absolute;
+        opacity: 0.9;
+      }
+
+      img {
+        vertical-align: top;
+      }
+      .left {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .right {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+
+      .top {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .front {
+        transform: rotateY(180deg) translateZ(100px);
+      }
+      .back {
+        transform: rotateY(0deg) translateZ(100px);
+        background-image: linear-gradient();
+        background-image: radial-gradient();
+      }
+
+      .cube2 {
+        width: 200px;
+        height: 200px;
+        margin: 200px 400px 100px 100px;
+        float: right;
+        transform-style: preserve-3d;
+        animation: rotate 15s infinite linear;
+      }
+      .cube2:hover {
+        animation-play-state: paused;
+      }
+      .cube2 > div {
+        position: absolute;
+        opacity: 0.9;
+      }
+
+      img {
+        vertical-align: top;
+      }
+      .left2 {
+        transform: rotateY(-90deg) translateZ(100px);
+      }
+      .right2 {
+        transform: rotateY(90deg) translateZ(100px);
+      }
+
+      .top2 {
+        transform: rotateX(90deg) translateZ(100px);
+      }
+      .bottom2 {
+        transform: rotateX(-90deg) translateZ(100px);
+      }
+      .front2 {
+        transform: rotateY(180deg) translateZ(100px);
+      }
+      .back2 {
+        transform: rotateY(0deg) translateZ(100px);
+        background-image: linear-gradient();
+        background-image: radial-gradient();
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotateX(0) rotateZ(0) rotateY(0);
+        }
+        to {
+          transform: rotateX(360deg) rotateZ(360deg) rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left"></div>
+    <div class="cube">
+      <div class="left">
+        <img src="img/left.png" />
+      </div>
+      <div class="right">
+        <img src="img/right.png" />
+      </div>
+      <div class="top">
+        <img src="img/top.png" />
+      </div>
+      <div class="bottom">
+        <img src="img/bottom.png" />
+      </div>
+      <div class="front">
+        <img src="img/front.png" />
+      </div>
+      <div class="back">
+        <img src="img/back.png" />
+      </div>
+    </div>
+    <div class="cube2">
+      <div class="left2">
+        <img src="img2/001.png" />
+      </div>
+      <div class="right2">
+        <img src="img2/004.png" />
+      </div>
+      <div class="top2">
+        <img src="img2/007.png" />
+      </div>
+      <div class="bottom2">
+        <img src="img2/025.png" />
+      </div>
+      <div class="front2">
+        <img src="img2/132.png" />
+      </div>
+      <div class="back2">
+        <img src="img2/493.png" />
+      </div>
+    </div>
+    <div class="right"></div>
+  </body>
+</html>

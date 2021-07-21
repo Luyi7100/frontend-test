@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .clock-wrapper {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        border-radius: 50%;
+        /* border: 5px solid black; */
+        margin: 0 auto;
+        margin-top: 50px;
+        background-image: url(img/clock-face---happy-face.gif);
+        background-size: cover;
+      }
+      .clock-wrapper > div {
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+      }
+      .hour-wrapper {
+        width: 55%;
+        height: 55%;
+        animation: run 43200s linear infinite;
+      }
+      .min-wrapper {
+        width: 65%;
+        height: 65%;
+        animation: run 3600s steps(60) infinite;
+      }
+      .sec-wrapper {
+        width: 75%;
+        height: 75%;
+        animation: run 60s steps(60) infinite;
+      }
+      .hour {
+        width: 6px;
+        height: 50%;
+        margin: 0 auto;
+        background-color: black;
+      }
+      .min {
+        width: 4px;
+        height: 50%;
+        margin: 0 auto;
+        background-color: black;
+      }
+      .sec {
+        width: 2px;
+        height: 50%;
+        margin: 0 auto;
+        background-color: red;
+      }
+
+      @keyframes run {
+        from {
+          transform: rotateZ(0);
+        }
+        to {
+          transform: rotateZ(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="clock-wrapper">
+      <div class="hour-wrapper">
+        <div class="hour"></div>
+      </div>
+      <div class="min-wrapper">
+        <div class="min"></div>
+      </div>
+      <div class="sec-wrapper">
+        <div class="sec"></div>
+      </div>
+    </div>
+  </body>
+</html>
