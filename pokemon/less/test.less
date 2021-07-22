@@ -1,0 +1,29 @@
+body {
+  width: 200px;
+  height: 200px;
+}
+.p2:extend(.box1 > .box3) {
+  background-color: aqua;
+}
+.p1() {
+  width: 100px;
+  height: 100px;
+  color: bisque;
+}
+.p2 {
+  .p1;
+}
+.test(@w,@h,@color) {
+  width: @w;
+  height: @h;
+  border: 1px solid @color;
+}
+.div {
+  .test(@color:#bfa,@h:100px,@w:200px);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
