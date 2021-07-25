@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/meitu.css" />
+    <link rel="stylesheet" href="less/meitu.css" />
     <link rel="stylesheet" href="fa/css/all.min.css" />
   </head>
   <body>
     <div class="nav-wrapper">
       <div class="nav">
         <div class="menu-button">
-          <a href="#">
+          <a class="bar" href="#">
             <i class="fas fa-bars"></i>
           </a>
           <div class="menu-service">
+            <div class="cross">
+              <i class="fas fa-times"></i>
+            </div>
             <ul class="menu">
               <li>
                 <a href="#">简介</a>
@@ -39,15 +42,17 @@
               <li>
                 <a href="#">媒体</a>
               </li>
+            </ul>
+            <ul class="menu-bottom">
               <li>
                 <a href="#">简</a>
               </li>
               <span>|</span>
-              <li>
+              <li class="lighter">
                 <a href="#">繁</a>
               </li>
-              <span>|</span>
-              <li>
+              <span class="lighter">|</span>
+              <li class="lighter">
                 <a href="#">English</a>
               </li>
             </ul>

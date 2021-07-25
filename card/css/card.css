@@ -27,9 +27,13 @@ body {
 .left .article {
   line-height: 150%;
   padding: 0 20px;
-  /* background: linear-gradient(to bottom, #878787, #f4f4f4);
-  background-clip: text;
-  color: transparent; */
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(255, 255, 255),
+    rgb(128, 128, 128)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 18px;
   color: #878787;
 }
