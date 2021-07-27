@@ -22,7 +22,12 @@
     color: #333;
   }
 }
-.nav .menu-service {
+.menu-button:hover {
+  .menu-service {
+    display: block;
+  }
+}
+.menu-service {
   position: fixed;
   left: 0;
   top: 0;
@@ -31,7 +36,7 @@
   box-sizing: border-box;
   padding: 15px;
   background-color: #fff;
-  // display: none;
+  display: none;
 
   .cross i {
     width: 25px;
@@ -65,11 +70,7 @@
     }
   }
 }
-// .nav .bar:hover {
-//   .menu-service {
-//     display: block;
-//   }
-// }
+
 .nav .logo {
   margin: 0 auto;
 }
