@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript">
-      var m = 1000;
-      var count = 0;
-      while (m <= 5000) {
-        m = m * 1.05;
-        count++;
+      for (
+        var a = 1, n = prompt('please enter number'), count = 0;
+        a <= n;
+        a++
+      ) {
+        if (n % a == 0) {
+          count++;
+        }
       }
-      console.log('一共需要' + count + '年');
+      if (count == 2) {
+        alert(n + '是质数');
+      } else {
+        alert(n + '不是质数');
+      }
     </script>
   </head>
   <body></body>
