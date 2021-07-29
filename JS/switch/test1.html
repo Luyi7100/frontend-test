@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var score = prompt('please enter your score');
+      // switch (parseInt(score / 10)) {
+      //   case 6:
+      //   case 7:
+      //   case 8:
+      //   case 9:
+      //   case 10:
+      //     alert('pass');
+      //     break;
+      //   case 5:
+      //   case 4:
+      //   case 3:
+      //   case 2:
+      //   case 1:
+      //   case 0:
+      //     alert(' not pass');
+      //     break;
+      //   default:
+      //     alert('enter again');
+      //     break;
+      // }
+      switch (true) {
+        case score >= 60 && score <= 100:
+          alert('pass');
+          break;
+        case score >= 0 && score < 60:
+          alert('not pass');
+          break;
+        default:
+          alert('enter again');
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
