@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript">
-      var m = 1000;
-      var count = 0;
-      while (m <= 5000) {
-        m = m * 1.05;
-        count++;
+      for (a = 1, sum = 0, n = 0; a < 101; a++) {
+        if (a % 7 === 0) {
+          sum = sum + a;
+          n++;
+        }
       }
-      console.log('一共需要' + count + '年');
+      console.log('7的倍数一共有' + n + '个');
+      console.log('合计是' + sum);
     </script>
   </head>
   <body></body>

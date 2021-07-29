@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script type="text/javascript">
-      var m = 1000;
-      var count = 0;
-      while (m <= 5000) {
-        m = m * 1.05;
-        count++;
+      for (i = 1; i < 10; i++) {
+        for (j = 1; j < i + 1; j++) {
+          document.write(
+            j + '*' + i + '=' + i * j + '&nbsp;&nbsp;&nbsp;&nbsp;'
+          );
+        }
+        document.write('<br/>');
       }
-      console.log('一共需要' + count + '年');
     </script>
   </head>
   <body></body>
