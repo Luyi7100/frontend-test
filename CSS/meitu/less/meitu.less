@@ -1,0 +1,113 @@
+.nav-wrapper {
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  .nav {
+    display: flex;
+    align-items: center;
+    .menu-button {
+      margin-left: 20px;
+      width: 18px;
+      height: 60px;
+      line-height: 60px;
+      i {
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .menu-service {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 290px;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: none;
+
+        .cross i {
+          position: fixed;
+          top: 20px;
+          left: 30px;
+          color: #c4c4c4;
+          font-size: 30px;
+        }
+        .menu {
+          padding-left: 100px;
+          padding-top: 30px;
+        }
+        .ball {
+          display: inline-block;
+          color: #333;
+          font-size: 30px;
+          border: 1px red solid;
+          // display: none;
+        }
+        .menu-bottom {
+          display: flex;
+          position: fixed;
+          bottom: 10px;
+          left: 70px;
+          a {
+            margin-right: 15px;
+          }
+          span {
+            margin-right: 15px;
+          }
+          .lighter {
+            color: #d4d4d4;
+          }
+          .lighter a {
+            color: #d4d4d4;
+          }
+        }
+      }
+      &:hover {
+        .menu-service {
+          display: block;
+        }
+      }
+    }
+    .logo {
+      margin: 0 auto;
+      img {
+        width: 73px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+// @media (min-width: 1050px) {
+//   .cross,
+//   .bar {
+//     display: none;
+//   }
+//   .menu-service {
+//     display: flex;
+//   }
+//   .menu-service,
+//   .menu,
+//   .menu-bottom {
+//     position: absolute;
+//   }
+//   .nav .logo {
+//     order: 1;
+//     margin-left: 20px;
+//   }
+//   .menu-button {
+//     order: 2;
+//   }
+//   .nav .menu-button {
+//     display: flex;
+//     position: relative;
+//   }
+//   .menu-button {
+//     width: 600px;
+//     height: 600px;
+//   }
+// }
