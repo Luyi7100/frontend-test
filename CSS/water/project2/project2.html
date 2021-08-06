@@ -16,17 +16,105 @@
       </div>
       <div class="main">
         <div class="step">
-          <div class="step1">1</div>
-          <i class="fas fa-grip-lines"></i>
-          <div class="step2">2</div>
-          <i class="fas fa-grip-lines"></i>
-          <div class="step3">3</div>
+          <div class="stepLeft">
+            <div class="step1">1</div>
+            <br />
+            <span class="bookingDetails">Booking Details</span>
+          </div>
+
+          <div class="line"></div>
+          <div class="stepCenter">
+            <div class="step2">2</div>
+            <br />
+            <span class="payment">Payment</span>
+          </div>
+          <div class="line"></div>
+          <div class="stepRight">
+            <div class="step3">3</div>
+            <br />
+            <span class="comfirm">Confirm</span>
+          </div>
         </div>
-        <span class="bookingDetails">Booking Details</span>
-        <span class="payment">Payment</span>
-        <span class="comfirm">Confirm</span>
+
         <h1>Booking Details</h1>
         <p>You can manage your booking with your details below.</p>
+        <form action="target.html">
+          <input class="single" type="text" name="date" value="06/06/2021" />
+          <input
+            class="single right"
+            type="text"
+            name="number of guests"
+            value="Number of guests"
+          />
+          <input
+            class="single"
+            type="text"
+            name="First name"
+            value="First name"
+          />
+          <input
+            class="single right"
+            type="text"
+            name="Last name"
+            value="Last name"
+          />
+          <input class="double" type="text" name="Email" value="Email" />
+          <input
+            class="double"
+            type="text"
+            name="Phone number"
+            value="Phone number"
+          />
+          <input
+            class="double"
+            type="text"
+            name="date of birth"
+            value="date of birth"
+            readonly
+          />
+          <i class="fas fa-sort-down"></i>
+        </form>
+        <h2>Please read and select all before the payment</h2>
+        <div class="option">
+          <input
+            type="checkbox"
+            name="option"
+            value="All guest in my booking are over 15 years of age"
+            checked
+          />
+          <label for="option1"
+            >All guest in my booking are over 15 years of age</label
+          >
+
+          <br />
+          <input
+            type="checkbox"
+            name="option"
+            value="I will either bring my own large bath towel or purchase one on the day"
+          />
+          <label for="option2"
+            >I will either bring my own large bath towel or purchase one on the
+            day</label
+          >
+          <br />
+          <input
+            type="checkbox"
+            name="option"
+            value="I understand this is a booking enquiry and not confirmation of booking"
+          />
+          <label for="option2"
+            >I understand this is a booking enquiry and not confirmation of
+            booking</label
+          >
+        </div>
+        <div class="box">
+          <a class="date" href="#">
+            <i class="fas fa-chevron-left"></i> SELECT DATE</a
+          >
+          <div class="continue">
+            <a href="">CONTINUE</a>
+          </div>
+        </div>
       </div>
 
       <div class="bottom">
