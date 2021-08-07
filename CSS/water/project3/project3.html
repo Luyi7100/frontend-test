@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book3</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="less/project3.css" />
+    <link rel="stylesheet" href="../icon/css/all.min.css" />
+  </head>
+  <body>
+    <div class="bookWrapper">
+      <div class="top clearfix">
+        <img class="logo" src="img/logo new.png" alt="logo" />
+      </div>
+      <div class="main">
+        <div class="step">
+          <div class="stepLeft">
+            <div class="step1">1</div>
+            <br />
+            <span class="bookingDetails">Booking Details</span>
+          </div>
+
+          <div class="line1"></div>
+          <div class="stepCenter">
+            <div class="step2">2</div>
+            <br />
+            <span class="payment">Payment</span>
+          </div>
+          <div class="line2"></div>
+          <div class="stepRight">
+            <div class="step3">3</div>
+            <br />
+            <span class="comfirm">Confirm</span>
+          </div>
+        </div>
+        <h1>Payment</h1>
+        <p>We will secure your spot once we receive your payment.</p>
+        <div class="payChoice">
+          <div class="creditCardWrapper">
+            <input type="radio" name="pay" value="credit card" checked />
+            <label for="credit card">Credit Card</label>
+          </div>
+          <div class="creditDetails">
+            <p>Pay with your credit card via Stripe.</p>
+            <span>Credit or debit card</span>
+            <div class="cardInformation">
+              <img src="img/master.png" alt="master" />
+              <input
+                class="cardnumber"
+                type="text"
+                name="cardnumber"
+                value="1234 5678 9101 1121"
+              />
+              <input
+                class="expirtDate"
+                type="text"
+                name="expirtDate"
+                value="02/25"
+              />
+              <input class="threeNumber" type="text" name="cvv" value="123" />
+            </div>
+            <div class="checkboxWrapper">
+              <input
+                type="checkbox"
+                name="save"
+                value="Save payment information to my account for further purchases."
+              />
+              <label class="save" for="save"
+                >Save payment information to my account for further
+                purchases.</label
+              >
+            </div>
+          </div>
+          <div class="payWrapper">
+            <input type="radio" name="pay" value="paypal" />
+            <label for="PayPal">PayPal</label>
+            <img src="img/paypal_logo.jpg" alt="paypal" />
+          </div>
+        </div>
+        <span class="info">
+          By proceeding, I agree with the terms of the license agreement,
+          privacy policy and terms and conditions.</span
+        >
+
+        <div class="box">
+          <a class="DETAILS" href="#">
+            <i class="fas fa-chevron-left"></i> BOOKING DETAILS</a
+          >
+          <div class="PLACE">
+            <a href="">PLACE ORDER</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <h1>Opening Hours</h1>
+        <div class="time">
+          <span>Friday 2pm - 9pm</span>
+          <span>Saturday Midday - 9pm</span>
+          <span>Sunday 11am - 6pm*</span>
+          <span>Monday 11am - 6pm**</span>
+          <p>
+            *On long weekends the bath house will open from 12 noon - 9 pm on
+            Sunday. (Last entry: Day visit guests 7pm for in-house 8.15pm)
+            <br />
+            **Available on selected long weekends only.(Last entry 4pm)
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
