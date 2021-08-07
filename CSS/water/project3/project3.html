@@ -37,7 +37,48 @@
         </div>
         <h1>Payment</h1>
         <p>We will secure your spot once we receive your payment.</p>
-        <div class="payChoice"></div>
+        <div class="payChoice">
+          <div class="creditCardWrapper">
+            <input type="radio" name="pay" value="credit card" checked />
+            <label for="credit card">Credit Card</label>
+          </div>
+          <div class="creditDetails">
+            <p>Pay with your credit card via Stripe.</p>
+            <span>Credit or debit card</span>
+            <div class="cardInformation">
+              <img src="img/master.png" alt="master" />
+              <input
+                class="cardnumber"
+                type="text"
+                name="cardnumber"
+                value="1234 5678 9101 1121"
+              />
+              <input
+                class="expirtDate"
+                type="text"
+                name="expirtDate"
+                value="02/25"
+              />
+              <input class="threeNumber" type="text" name="cvv" value="123" />
+            </div>
+            <div class="checkboxWrapper">
+              <input
+                type="checkbox"
+                name="save"
+                value="Save payment information to my account for further purchases."
+              />
+              <label class="save" for="save"
+                >Save payment information to my account for further
+                purchases.</label
+              >
+            </div>
+          </div>
+          <div class="payWrapper">
+            <input type="radio" name="pay" value="paypal" />
+            <label for="PayPal">PayPal</label>
+            <img src="img/paypal_logo.jpg" alt="paypal" />
+          </div>
+        </div>
         <span class="info">
           By proceeding, I agree with the terms of the license agreement,
           privacy policy and terms and conditions.</span
