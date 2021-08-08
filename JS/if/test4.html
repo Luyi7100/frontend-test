@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      var income = prompt('please enter your taxable income per year.');
+      function taxCalculator(a, b, c, d, e, f, g, h) {
+        if (income >= 0 && income <= a) {
+          alert('tax=0');
+        } else if (income > a && income <= b) {
+          alert('tax=' + Math.floor((income - a) * e));
+        } else if (income > b && income <= c) {
+          alert(
+            'tax=' + (Math.floor((b - a) * e) + Math.floor((income - b) * f))
+          );
+        } else if (income > c && income <= d) {
+          alert(
+            'tax=' +
+              (Math.floor((b - a) * e) +
+                Math.floor((c - b) * f) +
+                Math.floor((income - c) * g))
+          );
+        } else if (income > d) {
+          alert(
+            'tax=' +
+              (Math.floor((b - a) * e) +
+                Math.floor((c - b) * f) +
+                Math.floor((d - c) * g) +
+                Math.floor((income - d) * h))
+          );
+        } else {
+          alert('invalid income');
+        }
+      }
+      taxCalculator(18200, 45000, 120000, 180000, 0.19, 0.325, 0.37, 0.45);
+    </script>
+  </head>
+  <body></body>
+</html>
