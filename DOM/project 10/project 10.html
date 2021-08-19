@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>滚轮事件</title>
+    <style type="text/css">
+      #box1 {
+        width: 100px;
+        height: 100px;
+        min-height: 50px;
+        background-color: red;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function () {
+        var box1 = document.getElementById("box1");
+        box1.onmousewheel = function (event) {
+          if (event.wheelDelta > 0) {
+            box1.style.height = box1.clientHeight - 10 + "px";
+          } else {
+            box1.style.height = box1.clientHeight + 10 + "px";
+          }
+          return false;
+        };
+      };
+    </script>
+  </head>
+  <body style="height: 2000px">
+    <div id="box1"></div>
+  </body>
+</html>

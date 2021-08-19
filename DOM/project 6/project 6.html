@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>获取样式</title>
+    <style type="text/css">
+      #box1 {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+      }
+    </style>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        var box1 = document.getElementById("box1");
+        var btn01 = document.getElementById("btn01");
+        btn01.onclick = function () {
+          var w = getComputedStyle(box1, null);
+          alert(w.width);
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <button id="btn01">点我一下</button>
+    <br /><br />
+    <div id="box1"></div>
+  </body>
+</html>
