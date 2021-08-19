@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>拖拽一</title>
+    <style type="text/css">
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /*
+				 * 开启box1的绝对定位
+				 */
+        position: absolute;
+      }
+    </style>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        var box1 = document.getElementById("box1");
+        document.onmousemove = function (event) {
+          var left = event.clientX;
+          var top = event.clientY;
+          var st = document.documentElement.scrollTop;
+          var sl = document.documentElement.scrollLeft;
+          box1.style.left = left + sl + "px";
+          box1.style.top = top + st + "px";
+        };
+      };
+    </script>
+  </head>
+  <body style="height: 1000px; width: 2000px">
+    <div id="box1"></div>
+  </body>
+</html>

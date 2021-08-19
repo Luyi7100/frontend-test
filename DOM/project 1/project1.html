@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>图片切换</title>
+    <link rel="stylesheet" href="css/project1.css" />
+    <script type="text/javascript">
+      window.onload = function () {
+        var img = document.getElementsByTagName("img")[0];
+        var imgArr = [
+          "img/001.png",
+          "img/004.png",
+          "img/007.png",
+          "img/025.png",
+          "img/132.png",
+          "img/493.png",
+        ];
+        var index = 0;
+        var pre = document.getElementById("previous");
+        var info = document.getElementById("info");
+        info.innerHTML =
+          "This is" + (index + 1) + ", and " + "all together" + imgArr.length;
+        pre.onclick = function () {
+          index--;
+          if (index < 0) {
+            index = imgArr.length - 1;
+          }
+          img.src = imgArr[index];
+          info.innerHTML =
+            "This is" + (index + 1) + ", and " + "all together" + imgArr.length;
+        };
+        var next = document.getElementById("next");
+        next.onclick = function () {
+          index++;
+          if (index > imgArr.length - 1) {
+            index = 0;
+          }
+          img.src = imgArr[index];
+          info.innerHTML =
+            "This is" + (index + 1) + ", and " + "all together" + imgArr.length;
+        };
+      };
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <p id="info"></p>
+      <img src="img/001.png" alt="pokeman" />
+      <button id="previous">Previous</button>
+      <button id="next">Next</button>
+    </div>
+  </body>
+</html>

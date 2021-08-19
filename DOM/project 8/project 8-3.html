@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>拖拽三</title>
+    <style type="text/css">
+      #box1 {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+      }
+
+      #box2 {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        position: absolute;
+        left: 200px;
+        top: 200px;
+      }
+    </style>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        var box1 = document.getElementById("box1");
+        var box2 = document.getElementById("box2");
+        var img1 = document.getElementById("img1");
+
+        drag(box1);
+        drag(box2);
+        drag(img1);
+
+        function drag(obj) {
+          obj.onmousedown = function (event) {
+            var ol = event.clientX - obj.offsetLeft;
+            var ot = event.clientY - obj.offsetTop;
+            document.onmousemove = function (event) {
+              var left = event.clientX - ol;
+              var top = event.clientY - ot;
+              obj.style.left = left + "px";
+              obj.style.top = top + "px";
+            };
+            document.onmouseup = function () {
+              document.onmousemove = null;
+              document.onmouseup = null;
+            };
+          };
+          return false;
+        }
+      };
+    </script>
+  </head>
+  <body>
+    我是一段文字
+
+    <div id="box1"></div>
+
+    <div id="box2"></div>
+
+    <img src="img/an.jpg" id="img1" style="position: absolute" />
+  </body>
+</html>
